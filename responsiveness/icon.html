@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .line{
+            border: 2px solid black;
+            margin-top: 50vh;
+        }
+        #last_child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -100px;
+        }
+
+        #last_child .fa{
+            font-size: 200px;
+            border: 1px solid #fff;
+            padding: 5px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .row{
+            border: 1px solid rgb(170, 169, 169);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        input{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="line"></div>
+    <div id="last_child">
+        <i class="fa fa-user-circle"></i>
+    </div>
+
+
+    <div class="row">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Enter email address">
+    </div>
+</body>
+</html>

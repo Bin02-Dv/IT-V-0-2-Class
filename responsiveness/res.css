@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: dodgerblue;
+    position: fixed;
+    width: 99%;
+    box-shadow: 0 1rem 16px rgb(0, 0, 0, .3);
+}
+
+header ul{
+    display: flex;
+    gap: 10px;
+}
+
+li a:hover{
+    color: #c8c6c6;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
+
+main .cards{
+    /* background-color: dodgerblue; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+}
+
+main .cards .card{
+    height: 20vh;
+    width: 90%;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 901px) {
+    main .cards{
+        /* background-color: dodgerblue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 411px) {
+    main .cards{
+        /* background-color: dodgerblue; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

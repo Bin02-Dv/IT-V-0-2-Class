@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED</title>
+    <style>
+        .con{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn{
+            margin-top: 30px;
+        }
+
+        .btn .on{
+            background-color: green;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .btn .off{
+            padding: 10px;
+            font-size: 20px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="./led-on.jpg" id="led" alt="">
+        <span id="label">LED is On</span>
+        <div class="btn">
+            <button class="on" onclick="on()">On</button>
+            <button class="off" onclick="off()">Off</button>
+        </div>
+    </div>
+
+    <script>
+        function on(){
+            document.getElementById('led').src = './led-on.jpg';
+            document.getElementById('label').innerHTML = 'LED is On';
+        }
+        function off(){
+            document.getElementById('led').src = './led-off.jpg';
+            document.getElementById('label').innerHTML = 'LED is Off';
+        }
+    </script>
+</body>
+</html>

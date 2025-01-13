@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        :root{
+            --bg-color: pink;
+        }
+        *{
+            margin: 0;
+        }
+        .con{
+            display: flex;
+        }
+        .left{
+            width: 20%;
+            height: 100vh;
+            background: url(./bg-img.png);
+            background-size: contain;
+        }
+        .right{
+            width: 100%;
+            height: 100vh;
+            background: url(./google.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* right family*/
+        .right-w{
+            display: flex;
+            position: absolute;
+            top: 50px; right: 0;
+            left: 0;
+            margin: 20px;
+            box-shadow: 0 .5rem 16px rgb(0, 0, 0, .4);
+        }
+        .right-left-child{
+            width: 17.1%;
+            height: 80vh;
+            background: linear-gradient(150deg, rgb(5, 127, 248), rgb(96, 172, 247), rgb(127, 189, 251));
+        }
+        .right-right-child{
+            backdrop-filter: blur(10px);
+            width: 90%;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="left"></div>
+        <div class="right">
+            <div class="right-w">
+                <div class="right-left-child">0</div>
+                <div class="right-right-child">0</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
