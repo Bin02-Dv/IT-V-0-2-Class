@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object and Flow controls in JS</title>
+
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .con{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .con input{
+            outline: none;
+            border: 1px solid rgb(190, 189, 189);
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .con button{
+            background: dodgerblue;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .con span{
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="con">
+        <span id="span">----</span>
+        <input type="" id="word" placeholder="Enter a key word....">
+        <button onclick="ask()">Search</button>
+    </div>
+    
+
+    <script>
+
+        function ask(){
+            var obj = {
+                noun: "A word (other than a pronoun) used to identify any of a class of people, places, or things (common noun), or to name a particular one of these (proper noun)",
+                data: "The quantities, characters, or symbols on which operations are performed by a computer, which may be stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.",
+                computer: "A computer is a machine that can process and store information, and perform a variety of tasks"
+            }
+
+            var span = document.getElementById('span');
+            var word = document.getElementById('word').value;
+
+            span.innerHTML = obj[word];
+
+            console.log(word);
+
+        }
+    </script>
+</body>
+</html>
