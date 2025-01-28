@@ -11,18 +11,24 @@
             font-size: 20px;
             font-family: sans-serif;
         }
-        header{
+
+        .back-drop{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            backdrop-filter: blur(1px);
             padding: 5px;
+        }
+        header{
             box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+            background-image: url(./bg.jpg);
         }
         ul{
             display: flex;
             list-style: none;
             gap: 30px;
             padding: 5px;
+            color: #fff;
         }
         a{
             background-color: dodgerblue;
@@ -52,6 +58,10 @@
             display: block;
         }
 
+        span{
+            font-weight: 900;
+        }
+
         @media screen and (max-width: 876px) {
             .middle-ul{
                 display: none;
@@ -61,24 +71,26 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li>
-                <img src="./res.png" alt="" height="50" width="50">
-            </li>
-        </ul>
-        <ul class="middle-ul">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Training</li>
-            <li>Partner with Us</li>
-            <li>Event's</li>
-            <li>Services</li>
-        </ul>
-        <ul>
-            <li>
-                <a href="">Contact Us</a>
-            </li>
-        </ul>
+        <div class="back-drop">
+            <ul>
+                <li>
+                    <img src="./res.png" alt="" height="50" width="50">
+                </li>
+            </ul>
+            <ul class="middle-ul">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Training</li>
+                <li>Partner with Us</li>
+                <li>Event's</li>
+                <li>Services</li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <nav>
@@ -91,6 +103,9 @@
             <li>Services</li>
         </ul>
     </nav>
+
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aperiam, commodi sint ab rem optio maxime corrupti. At id earum veniam commodi et amet porro fuga minus qui explicabo! Aperiam.</span>
 
 
     <script>
