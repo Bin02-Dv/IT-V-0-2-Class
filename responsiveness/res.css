@@ -57,7 +57,6 @@ main .cards .card{
 @media screen and (max-width: 901px) {
     main .cards{
         /* background-color: dodgerblue; */
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }

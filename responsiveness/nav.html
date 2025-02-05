@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <i class="fa fa-bars" id="toggle"></i>
+            </li>
+        </ul>
+        <ul>
+            <li>Username</li>
+            <li>
+                <i class="fa fa-user-circle"></i>
+            </li>
+        </ul>
+    </header>
+
+    <!-- body section -->
+
+    <section class="main-body">
+        <nav class="nav-bar" id="nav">
+
+        </nav>
+        <main>
+            
+        </main>
+    </section>
+
+
+    <script>
+        document.getElementById("toggle").addEventListener("click", function(){
+            document.getElementById("nav").classList.toggle("show");
+        })
+    </script>
+</body>
+</html>

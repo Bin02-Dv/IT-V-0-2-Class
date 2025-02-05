@@ -35,20 +35,23 @@
     <h1 id="heading"></h1>
     <input type="text" id="email" placeholder="Enter your email">
     <input type="password"><br>
-    <button onclick="document.getElementById('heading').innerHTML='you have logged successefull!';">click</button>
+    <!-- <button onclick="htmlModification()">click</button> -->
+    <button id="btn">click</button>
 
 
 
     <!-- Snake casing -->
     <!-- Camel casing -->
     <!-- Pascal casing -->
+    
     <script>
-        function modifyFunc(){
-            document.getElementById('heading').innerHTML='Welcome to JavaScript!';
-            document.getElementById('heading').style = 'background-color: red; color: #fff;';
-        }
+        //function htmlModification(){
+        //    document.getElementById('heading').innerHTML='you have logged successefull!';
+        //}
 
-        <!-- modify(); -->
+        document.getElementById("email").addEventListener("keyup", function(){
+            document.getElementById('heading').innerHTML='you have logged successefull!';
+        })
     </script>
 </body>
 </html>
