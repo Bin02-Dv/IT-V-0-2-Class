@@ -35,7 +35,7 @@
     <h1 id="heading"></h1>
     <input type="text" id="email" placeholder="Enter your email">
     <input type="password"><br>
-    <!-- <button onclick="htmlModification()">click</button> -->
+    <button onclick="htmlModification();">click</button>
     <button id="btn">click</button>
 
 
@@ -45,9 +45,11 @@
     <!-- Pascal casing -->
     
     <script>
-        //function htmlModification(){
-        //    document.getElementById('heading').innerHTML='you have logged successefull!';
-        //}
+        function htmlModification(){
+            document.getElementById('heading').innerHTML='you have logged successefull!';
+        }
+
+        //htmlModification();
 
         document.getElementById("email").addEventListener("keyup", function(){
             document.getElementById('heading').innerHTML='you have logged successefull!';

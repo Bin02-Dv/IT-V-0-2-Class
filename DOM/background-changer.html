@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGround Changer</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .con{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        button{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid rgb(200, 200, 200);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="con" id="container">
+        <button id="blue">Blue</button>
+        <button id="green">Green</button>
+        <button id="black">Black</button>
+    </div>
+
+
+    <script>
+        const blue = document.getElementById("blue");
+        const green = document.getElementById("green");
+        const black = document.getElementById("black");
+        const bdy = document.getElementById("container");
+
+        blue.addEventListener('click', function(){
+            bdy.style.background = "blue";
+            green.style = "background: white; color: black;";
+            black.style = "background: white; color: black;";
+            blue.style = "background: blue; color: white;";
+        });
+
+        green.addEventListener('click', function(){
+            bdy.style.background = "green";
+            blue.style = "background: white; color: black;";
+            black.style = "background: white; color: black;";
+            green.style = "background: green; color: white;";
+        });
+
+        black.addEventListener('click', function(){
+            bdy.style.background = "black";
+            blue.style = "background: white; color: black;";
+            green.style = "background: white; color: black;";
+            black.style = "background: black; color: white;";
+        })
+    </script>
+</body>
+</html>
